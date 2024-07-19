@@ -1,0 +1,20 @@
+# .gitlab-ci.yml
+
+# This is an example configuration for deploying a GitLab Pages site named "couvreurlab".
+
+# Define stages of the CI/CD pipeline
+stages:
+  - deploy
+
+# Job for deploying the GitLab Pages site
+deploy_pages:
+  stage: deploy
+  image: ruby:3.2
+  script:
+    - gem install dpl
+    - dpl --provider=pages --skip-cleanup --local-dir=public --target=couvreurlab
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

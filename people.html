@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Members</title>
+    <style>
+	
+	 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One:wght@400&family=Lato:wght@400&display=swap');;
+
+              body {
+            font-family: 'Fjalla One', sans-serif;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+		
+		.nav-box {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000; /* Adjust background color as needed */
+    z-index: 1000; /* Adjust z-index to make sure it's above other elements */
+}
+
+/* Add padding to the content to avoid being hidden behind the fixed navbar */
+body {
+    padding-top: 60px; /* Adjust the value based on the navbar height */
+}
+
+        /* Black box styling for navigation */
+        .nav-box {
+            background-color: #000;
+            padding: 1em 0; /* Adjust padding as needed */
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+		nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-family: 'Lato', sans-serif; /* Apply Lato font to navigation links */
+        }
+
+        .google-scholar-box {
+            background-color: #ff6666; /* Light red background */
+            color: #fff; /* White font color */
+            padding: 10px; /* Adjust padding as needed */
+            border-radius: 5px; /* Rounded corners */
+            text-align: center;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            padding: 10em 4em;
+            background-size: cover;
+            background-position: center;
+            background-color: #000;
+            background-image: url("file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/members.JPG");
+            max-width: 1400px;
+            margin: 0 auto;
+            font-family: 'Fjalla One', sans-serif; /* Apply Fjalla One to header */
+        }
+
+        header h1,
+        header p {
+            color: #fff;
+            margin: 2em 0;
+        }
+
+       section {
+            max-width: 1200px;
+            margin: 2em auto; /* Adjust margin as needed */
+            padding: 2em; /* Adjust padding as needed */
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            font-family: 'Lato', sans-serif;
+            text-align: justify; /* Justify text */
+        }
+
+		h1.black-text {
+    color: black;
+		}
+
+        h2 {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify; /* Justify text */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1em auto; /* Adjust margin as needed */
+        }
+		
+		footer {
+            text-align: center;
+            padding: 0.5em;
+            background-color: #3498db;
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            header, section, footer {
+                padding: 1em;
+            }
+
+            img {
+                margin: 1em 0; /* Adjust margin for smaller screens */
+            }
+        }
+		
+					.video-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+			}
+
+.video-container {
+    width: 50%;
+		}
+
+.video-text {
+    width: 50%;
+}
+		
+		.photo-container {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px; /* Adjust margin as needed */
+				}
+
+		.photo-container img {
+			width: 30%; /* Adjust width as needed */
+			border-radius: 8px; /* Add rounded corners */
+				}
+				
+				.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px; /* Adjust padding as needed */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 60px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 30px; /* Add a small margin to separate logos if needed */
+}
+
+
+.photo-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start (left) */
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Style for the photo */
+.left-photo {
+    max-width: 250px; /* Adjust the maximum width of the photo */
+    width: 100%; /* Make all photos the same width */
+    height: auto;
+    border-radius: 10px; /* Add rounded corners */
+    margin-right: 20px; /* Add margin to separate photo from text */
+}
+
+/* Style for the text */
+.right-text {
+    max-width: calc(100% - 320px); /* Adjust the maximum width of the text */
+    text-align: justify; /* Justify the text */
+}
+
+a {
+            color: blue; /* Set link color */
+            text-decoration: underline; /* Underline link text */
+        }
+
+        /* Style for the container */
+        .researcher-container {
+            margin-bottom: 20px; /* Add margin between researchers */
+        }
+
+        /* Style for the text */
+        .researcher-text {
+            max-width: 800px; /* Adjust the maximum width of the text */
+            text-align: justify; /* Justify the text */
+            text-indent: 50px; /* Add text indentation */
+        }
+		
+    </style>
+	
+	
+</head>
+<body>
+    <!-- Black box for navigation links -->
+<div class="nav-box">
+    <!-- Navigation links -->
+    <nav>
+	    <a href="home.html">HOME</a>
+        <a href="people.html">PEOPLE</a>
+        <a href="global.html">ERC GLOBAL</a>
+        <a href="publications.html">PUBLICATIONS</a>
+        <a href="videos.html">VIDEOS</a>
+        <a href="apc.html">AGPC</a>
+    </nav>
+</div>
+
+    <header>
+        <h1 class="black-text">LAB MEMBERS</h1>
+    </header>
+
+    <section>
+	
+	
+	<h2>group leader</h2>
+	
+	    <div class="video-section">
+        <div class="video-container">
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/XKiE4kdRnS8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <div class="video-text">
+            <p><a href="https://scholar.google.com/citations?user=DH_RNS8AAAAJ&hl=fr" target="_blank">Thomas L.P. Couvreur</a> (HDR, Directeur de Recherche 2)</p>
+    <p>Besides activities described on the homepage, I am active in taxonomical research in two wonderful plant families characteristic of tropical rain forests: Palms and Annonaceae. I undertake monographs and revisions of several little-known genera in both families. I also write floras for both families for different countries. I work in herbaria and undertake fieldwork for collecting plants in South America, Africa, and Southeast Asia. This last part is the basis of my research. Without taxonomy, the above research projects would be hampered. Finally, I use the internet and special tools available to disseminate and make this information available to everyone. I am also Chair of the Species Survival Commission - Palm Specialist Group of the IUCN.</p>
+        </div>
+    </div>
+
+<br>
+
+
+	<h2>post doctoral researchers</h2>
+
+<div class="photo-text-container">
+        <!-- Photo on the left -->
+        <img class="left-photo" src="file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/holzmeyer.JPG" alt="Laura">
+
+        <!-- Text on the right -->
+        <div class="right-text">
+            <p><a href="https://scholar.google.com/citations?user=DH_RNS8AAAAJ&hl=fr" target="_blank">Dr. Laura Holzmeyer</a></p>
+            <p>Laura leads the diversification part of the ERC GLOBAL project, reconstructing the Annonaceae phylogeny with Francis Nge. She will then apply different diversification methods to test a number of hypotheses about rain forests.<br>
+			- Holzmeyer L, Hauenschild F, Muellner-Riehl AN (2023) Sunda–Sahul floristic exchange and pathways into the Southwest Pacific: New insights from wet tropical forest trees. <a href="https://doi.org/10.1111/jbi.14606" target="_blank">Journal of Biogeography 50: 1257–1270</a>.</p>
+        </div>
+    </div>
+	
+	<div class="photo-text-container">
+        <!-- Photo on the left -->
+        <img class="left-photo" src="file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/wei.jpg" alt="Wei">
+
+        <!-- Text on the right -->
+        <div class="right-text">
+            <p><a href="https://scholar.google.com/citations?user=YOxNTyAAAAAJ&hl=fr&oi=sra" target="_blank"> Dr. Wei Xu</a></p>
+            <p>Wei is in charge of the conservation side of the ERC GLOBAL project. He is studying the multidimensional conservation of global rain forest diversity, in particular, extinction risk and loss of evolutionary history within the pantropical family Annonaceae.</p>
+        </div>
+    </div>
+
+
+	<h2>PhD students</h2>
+
+	<div class="photo-text-container">
+        <!-- Photo on the left -->
+        <img class="left-photo" src="file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/santacruz.jpg" alt="Paola">
+
+        <!-- Text on the right -->
+        <div class="right-text">
+            <p><a href="https://scholar.google.com/citations?user=fKqUynIAAAAJ&hl=fr&oi=ao" target="_blank"> Paola Santacruz</a></p>
+			<p>co supervised with Prof. Rommel Montufar, Pontificia Universidad Católica del Ecuador (PUCE), Quito Ecuador</p>
+			<p>Universty of Montpellier
+			2021 - 2024</p>
+			<p>Paola is part of the ERC GLOBAL project. She is based in Ecuador at the PUCE. Her project focuses on studying the interactions between Neotropical Annonaceae and their herbivores. She will also undertake metabolic and spectroscopy analyses of leaves to infer the chemical defense of Annonaceae and how they evolved within the family. She undertakes her research mainly at the Yasuni Forest Dynamics Plot.</p>
+        </div>
+    </div>
+	
+			<div class="photo-text-container">
+        <!-- Photo on the left -->
+        <img class="left-photo" src="file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/erica.jpeg" alt="Erica">
+
+        <!-- Text on the right -->
+        <div class="right-text">
+            <p>Erica Onjaniaina Ravomanana</p>
+			<p> co supervised with Dr. Mijoro Rakotoarinivo</p>
+            <p>University of Antananarivo, Madagascar
+			2022-2025</p>
+
+			<p>Erica is working on redlisting the Annonaceae of Madagascar. We generated a verified taxonomic database of the family for Madagascar. She will use different R packages (eg ConR) and bibliography to assess these species. She will also undertake the taxonomic revision of an Annonaceae genus in Madagascar. Her research is part of the ERC GLOBAL project.</p>
+        </div>
+    </div>
+	
+	
+			<div class="photo-text-container">
+        <!-- Photo on the left -->
+        <img class="left-photo" src="file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/serafin.jpeg" alt="Serafin">
+
+        <!-- Text on the right -->
+        <div class="right-text">
+            <p>Serafin Streiff</p>
+			<p>co supervised by Roy Erkens, University of Maastricht</p>
+			University of Montpellier, Montpellier / Paris
+			2022-2025</p>
+			
+			<p>Serafin will work on the spatial evolution and diversifcation of Annonaceae at global scales within the ERC GLOBAL project. He will investigate drivers of species evolution spatially, and what explains differences between continents, but alos at local scales. His research is part of the ERC GLOBAL project.</p>
+        </div>
+    </div>
+	
+
+
+
+    <h2>master students</h2>
+	
+			<div class="photo-text-container">
+        <!-- Photo on the left -->
+        <img class="left-photo" src="file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/valerie.jpg" alt="Valerie">
+
+        <!-- Text on the right -->
+        <div class="right-text">
+            <p>Valérie Ramarosandratana</p>
+			<p>co supervised with Dr. Mijoro Rakotoarinivo</p>
+			<p>University of Antananarivo, Madagascar
+			2022-2023</p>
+
+			<p>Valérie is working on the morphological delimitation of species in the Malagasy endemic genus Ambavia (Annonaceae).  Ambavia is one of the two endemic genera of Annonaceae in Madagascar (the other being Fenerivia). Her research is part of the ERC GLOBAL project.</p>
+        </div>
+    </div>
+	
+			<div class="photo-text-container">
+        <!-- Photo on the left -->
+        <img class="left-photo" src="file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/ishaq.jpg" alt="Ishaq">
+
+        <!-- Text on the right -->
+        <div class="right-text">
+            <p>Ishaq Muawiyya</p>
+            <p>co-supervised withDr. Abubakar Bello</p>
+			<p>	Umaru Musa Yar'Adua University, Nigeria
+				2023-2024</p>
+
+			<p>Ishaq works on the diversity and conservation of Annonaceae in Nigeria. He will compile a check list and distribution database, and undertake IUCN redlisting of the species.</p>
+        </div>
+    </div>
+
+	<h2>engineers, international volunteers, other contracts</h2>
+
+        <!-- Text on the right -->
+        <div class="right-text">
+            <p>Sonia Hamdi</p>
+			<p>Project manager (based in Montpellier)</p>
+			Sonia is the project manager of the ERC GLOBAL project. She helps with the management of the project at both the administration and financial levels.</p>
+        </div>
+    </div>
+	
+				<div class="photo-text-container">
+        <!-- Photo on the left -->
+        <img class="left-photo" src="file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/archimede.jpeg" alt="Archimede">
+
+        <!-- Text on the right -->
+        <div class="right-text">
+            <p>Archimède Patipe</p>
+			<p>	Bioinformatics engineer, based in Montpellier.</p>
+			<p>	Archimède works within the ERC GLOBAL project, 20203-2025.</p>
+			Archimède works within the ERC GLOBAL project, 20203-2025. He is in charge of assisting and managing the scripts and databases that are generated within the GLOBAL project. He is also uploading our scripts to the team GitHub.</p>
+        </div>
+    </div>
+	
+	
+					<div class="photo-text-container">
+        <!-- Photo on the left -->
+        <img class="left-photo" src="file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/andrea.jpg" alt="Andrea">
+
+        <!-- Text on the right -->
+        <div class="right-text">
+            <p>Andrea Fernandez</p>
+			<p>Botanist (Based in Quito, Ecuador)</p>
+			<p>Andrea is recruited by the IRD as a local staff (2023). She works a the projects botanist in Ecuador, helps with field work and specimen curation within the ERC GLOBAL project. She is also in charge to red list palms of western Ecuador.</p>
+        </div>
+    </div>
+
+	<h2>past members</h2>
+	
+	 <!-- Dr. Carlos Rodrigues-Vaz -->
+    <div class="researcher-container">
+        <p><strong>Dr. Carlos Rodrigues-Vaz</strong>; Botanical engineer (based in Paris, MNHN): 2020-2023</p>
+    </div>
+
+    <!-- Dr. Suzanne Kamga Mogue -->
+    <div class="researcher-container">
+        <p><strong>Dr. Suzanne Kamga Mogue</strong> (co-supervised by Prof. Bonaventure Sonké)<br>
+            Mogue Kamga, S., Brokamp, G., Cosiaux, A., Awono, A., Fürniss, S., Barfod, A.S., Muafor, F.J., Le Gall, P., Sonké, B., Couvreur, T.L.P., 2020.
+            <a href="https://doi.org/10.1007/s12231-020-09487-z" target="_blank">Use and Cultural Significance of Raphia Palms</a>. Econ Bot.</p>
+        <p>Mogue Kamga, S., Sonké, B., Couvreur, T.L.P., 2019.
+            <a href="https://doi.org/10.3897/BDJ.7.e37757q" target="_blank">Raphia vinifera (Arecaceae; Calamoideae): Misidentified for far too long</a>. Biodiversity Data Journal 7, e37757.</p>
+    </div>
+
+    <!-- Alix Lozinguez -->
+    <div class="researcher-container">
+        <p><strong>Alix Lozinguez</strong> (VI IRD Quito, 2021-2023)</p>
+    </div>
+
+    <!-- Dr. Francis Nge -->
+    <div class="researcher-container">
+		<p><strong><a href="https://scholar.google.com/citations?user=52JhlLEAAAAJ&hl=fr&oi=ao" target="_blank"><strong>Dr. Francis Nge</strong>, Now researcher at the Sydney Botanic Gardens, Australia</strong></p>
+    </div>
+
+    <!-- Lily Bennett -->
+    <div class="researcher-container">
+        <p><strong>Lily Bennett</strong>; Université de Montpellier, France; 2023</p>
+    </div>
+
+    <!-- Nicolas Zapata -->
+    <div class="researcher-container">
+        <p><strong>Nicolas Zapata</strong>: Botanist (Based in Quito, Ecuador).</p>
+    </div>
+
+    <!-- Laureline Petit-Bagnard -->
+    <div class="researcher-container">
+        <p><strong>Laureline Petit-Bagnard</strong> (co-supervised by Dr. Germinal Rouhan) University of Montpellier, Montpellier / Paris 2022</p>
+    </div>
+
+    <!-- Vincent Soulé -->
+    <div class="researcher-container">
+        <p><strong>Vincent Soulé</strong>, IRD, 2021-2023</p>
+    </div>
+
+    <!-- Dr. Mariano Kpatenon Joly and Estelle Jaligot -->
+    <div class="researcher-container">
+        <p><strong>Dr. Mariano Kpatenon Joly</strong> (co-directed with Adeoti Adeola Zouri-Kifouli, Université de d'Abomey-Calavi, Bénin) and <strong>Estelle Jaligot</strong> (CIRAD, Montpellier).<br>
+            Université de Abomey-Calavi & Université de Montpellier, 2018-2021</p>
+        <p>Kpatènon, M. J.; Salako, K. V.; Santoni, S.; Zekraoui, L.; Latreille, M.; Tollon-Cordet, C.; Mariac, C.; Jaligot, E.; Beulé, T.; Adéoti, K.
+            <a href="https://doi.org/10.1186/s12863-020-00955-y" target="_blank">Transferability, Development of Simple Sequence Repeat (SSR) Markers and Application to the Analysis of Genetic Diversity and Population Structure of the African Fan Palm (Borassus Aethiopum Mart.) in Benin</a>.
+            BMC Genetics 2020, 21 (1), 145.</p>
+    </div>
+
+    <!-- Dr. Leo Paul Dagallier -->
+    <div class="researcher-container">
+	<p><strong><a href="https://scholar.google.com/citations?user=qdnOs0YAAAAJ&hl=fr&oi=ao" target="_blank">Dr. Léo Paul Dagallier, PhD, Universty of Montpellier, 2018-2021</strong></p>
+        <p>Dagallier, L.-P.M.J., Janssens, S.B., Dauby, G., Blach-Overgaard, A., Mackinder, B.A., Droissart, V., Svenning, J.-C., Sosef, M.S.M., Stévart, T., Harris, D.J., Sonké, B., Wieringa, J.J., Hardy, O.J., Couvreur, T.L.P., 2020.
+            <a href="https://doi.org/10.1111/nph.16293" target="_blank">Cradles and museums of generic plant diversity across tropical Africa</a>. New Phytologist 225, 2196–2213.</p>
+        <p>Dagallier, L.-P. M. J.; Mbago, F. M.; Luke, W. R. Q.; Couvreur, T. L. P.
+            <a href="https://doi.org/10.3897/phytokeys.174.61630" target="_blank">Three New Species of Uvariodendron (Annonaceae) from Coastal East Africa in Kenya and Tanzania</a>. PhytoKeys 2021, 174, 107–126.</p>
+    </div>
+
+    <!-- Dr. Sebastían Pablo Escobar Vasquez -->
+    <div class="researcher-container">
+        <p><strong>Dr. Sebastían Pablo Escobar Vasquez</strong>, PhD, (Co supervised by Henrik Balslev, Rommel Montufar) Aarhus University, 2017-2020</p>
+        <p>Escobar, S., Pintaud, J.-C., Balslev, H., Bernal, R., Ramírez, M.M., Millán, B., & Montúfar, R.
+            <a href="https://doi.org/10.1002/ece3.4216" target="_blank">Genetic structuring in a Neotropical palm analyzed through an Andean orogenesis-scenario</a>. Ecology and Evolution.</p>
+        <p>Escobar, S.; Helmstetter, A. J.; Jarvie, S.; Montúfar, R.; Balslev, H.; Couvreur, T. L. P.
+            <a href="https://doi.org/10.1111/jbi.14055" target="_blank">Pleistocene Climatic Fluctuations Promoted Alternative Evolutionary Histories in Phytelephas Aequatorialis, an Endemic Palm from Western Ecuador</a>.
+            Journal of Biogeography 2021.</p>
+    </div>
+
+    <!-- Dr. Andrew Helmstetter -->
+    <div class="researcher-container">
+	
+	<p><strong><a href="https://scholar.google.com/citations?user=Ye-lhkIAAAAJ&hl=fr&oi=ao" target="_blank">Dr. Andrew Helmstetter</strong>, post doc on the AFRODYN project</a></strong>: PhD student (2014-2017).</p>
+        <p>Helmstetter, A. J.; Béthune, K.; Kamdem, N. G.; Sonké, B.; Couvreur, T. L. P.
+            <a href="https://doi.org/10.1073/pnas.2001018117" target="_blank">Individualistic Evolutionary Responses of Central African Rain Forest Plants to Pleistocene Climatic Fluctuations</a>.
+            PNAS 2020.</p>
+        <p>Helmstetter, A. J.; Amoussou, B. E. N.; Bethune, K.; Kamdem, N. G.; Kakaï, R. G.; Sonké, B.; Couvreur, T. L. P.
+            <a href="https://doi.org/10.1111/mec.15572" target="_blank">Phylogenomic Approaches Reveal How Climate Shapes Patterns of Genetic Diversity in an African Rain Forest Tree Species</a>.
+            Molecular Ecology 2020, 29 (18), 3560–3573.</p>
+    </div>
+
+    <!-- Dr. Jean Paul Ghogue -->
+    <div class="researcher-container">
+        <p><strong>Dr. Jean Paul Ghogue</strong>, Université de Yaoundé I, Cameroon, 2012-2018 (co-supervised with Prof. Sonké)</p>
+        <p>Ghogue J.P., Sonké, B., Couvreur, T.L.P. 2017.
+            <a href="link-to-ghogue-paper" target="_blank">Revision of the African genera Brieya and Piptostigma</a>.
+            Plant Ecology and Evolution. 217: 173-216</p>
+    </div>
+
+    <!-- Dr. Brandet Junior Lissambou -->
+    <div class="researcher-container">
+        <p><strong>Dr. Brandet Junior Lissambou</strong>, Université des Sciences et Techniques de Masuku, Gabon (co-supervised by Christiane Ateké, Olivier Hardy and Bonaventure Sonké) 2014-2018</p>
+        <p>Lissambou B-J, Hardy OJ, Atteke C, Stévart T, Dauby G, Mbatchi B, Sonke B, Couvreur TLP (2018)
+            <a href="https://doi.org/10.3897/phytokeys.114.27395" target="_blank">Taxonomic revision of the African genus Greenwayodendron (Annonaceae)</a>.
+            PhytoKeys 114: 55–93.</p>
+        <p>Lissambou B-J, Couvreur TLP, Atteke C, Stévart T, Piñeiro R, Dauby G, Monthe FK, Ikabanga DU, Sonké B, M’batchi B, Hardy OJ (2019)
+            <a href="https://doi.org/10.1002/tax.12064" target="_blank">Species delimitation in the genus Greenwayodendron based on morphological and genetic markers reveals new species</a>.
+            TAXON 68: 442–454.</p>
+    </div>
+	
+	<!-- Dr. Marie Claire Veranso -->
+<div class="researcher-container">
+    <p><strong><a href="https://scholar.google.com/citations?user=vh6Yd-kAAAAJ&hl=fr&oi=ao" target="_blank">Dr. Marie Claire Veranso</a></strong>: PhD student (2014-2017).</p>
+    <p class="researcher-text">
+        University of Buea, Cameroon<br>
+        Institute für Spezielle Botanik, University of Mainz, Germany<br>
+        (I was one of the co-supervisors together with Dr. Gudrun Kadereit, Douglas Stone and Dr. Fongod).<br>
+        Veranso–Libalah, M.-C., Douglas, R.S., Fongod, A.G.N., Couvreur, T.L.P., Kadereit, G. 2017.
+        <a href="https://doi.org/10.1111/nph.14298" target="_blank">Phylogeny and systematics of African Melastomateae (Melastomataceae)</a>. Taxon 6: 584-614
+    </p>
+</div>
+
+<!-- Alix Pugeaut -->
+<div class="researcher-container">
+    <p><strong>Alix Pugeaut</a></strong>: Master II student (2017). (Muséum National d’Histoire Naturelle, Paris)</p>
+</div>
+
+<!-- Dr. Amira Azizan -->
+<div class="researcher-container">
+    <p><strong>Dr. Amira Azizan</strong>: Master I student (2016) (Université de Montpellier 2, Agro Paris Tech)</p>
+</div>
+
+<!-- Dr. Gilles Dauby -->
+<div class="researcher-container">
+    <p><strong>Dr. Gilles Dauby</a></strong>: Postdoctoral fellow of RAINBIO project (2014-2016)</p>
+    <p class="researcher-text">
+        Dauby G, et al. (2016) RAINBIO: a mega-database of tropical African vascular plants distributions.
+        <a href="https://doi.org/10.3897/phytokeys.74.9723" target="_blank">PhytoKeys 74: 1-18</a>.<br>
+        Sosef M.S.M.*, Dauby G.*, et al. 2017. Exploring the floristic diversity of tropical Africa.
+        <a href="https://doi.org/10.1186/s12863-017-0527-9" target="_blank">BMC Biology, 15, 1-15</a>.
+    </p>
+</div>
+
+<!-- Dr. Adama Faye -->
+<div class="researcher-container">
+    <p><strong><a href="https://scholar.google.com/citations?user=27GVrB4AAAAJ&hl=fr&oi=sra" target="_blank">Dr. Adama Faye</a></strong>: Master II and then PhD student (2011-2015)</p>
+    <p class="researcher-text">
+        Université de Montpellier, IRD grant.<br>
+        Faye, A., Pintaud, J.–C., Baker, W.J., Vigouroux, Y., Sonké, B. & Couvreur, T.L.P. 2016.
+        <a href="https://doi.org/10.1111/boj.12395" target="_blank">Phylogenetics and diversification history of African rattans (Calamoideae, Ancistrophyllinae)</a>.
+        Botanical Journal of the Linnean Society. 182, 256–271<br>
+        Faye, A., Pintaud, J.–C., Baker, W.J., Sonké, B. & Couvreur, T.L.P. 2014. A plastid phylogeny of the African rattans
+        (Ancistrophyllinae, Arecaceae). <a href="https://doi.org/10.1600/036364414X681197" target="_blank">Systematic Botany 39: 1099–1107</a>.<br>
+        Faye, A., Deblauwe, V., Mariac, C., Richard, D., Sonké, B., Vigouroux, Y. & Couvreur, T.L.P. 2016.
+        <a href="https://doi.org/10.1007/s11295-016-0986-z" target="_blank">Phylogeography of the genus Podococcus (Palmae/Arecaceae) in Central African rain forests</a>:
+        climate stability predicts unique genetic diversity. Molecular Phylogenetics and Evolution. 105, 126–138<br>
+        Scarcelli, N., Mariac, C., Couvreur, T.L.P., Faye, A., Richard, D., Sabot, F., Berthouly‐Salazar, C. & Vigouroux, Y. 2016.
+        <a href="https://doi.org/10.1111/mec.13486" target="_blank">Intra‐individual polymorphism in chloroplasts from NGS data: where does it come from and how to handle it?</a>
+        Molecular Ecology Resources 16: 434-445.
+    </p>
+</div>
+
+<!-- Dr. Vincent Deblauwe -->
+<div class="researcher-container">
+    <p><strong><a href="https://scholar.google.com/citations?user=_Lq15wsAAAAJ&hl=fr&oi=ao" target="_blank">Dr. Vincent Deblauwe</a></strong>: Postdoctoral fellow (2014-2015)</p>
+    <p class="researcher-text">
+        IRD, Université de Yaoundé I<br>
+        Deblauwe, V., Droissart, V., Bose, R., Sonké, B., Blach-Overgaard, A., Svenning, J.C., Wieringa, J.J., Ramesh, B.R.,
+        Stévart, T. & Couvreur, T.L.P. 2016. <a href="https://doi.org/10.1111/geb.12405" target="_blank">Remotely sensed temperature and precipitation data improve species distribution modelling in the tropics</a>.
+        Global Ecology and Biogeography 25: 443-454.
+    </p>
+</div>
+	
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Thomas L.P. Couvreur @ird </p>
+        
+        <div class="logo-container">
+            <img src="file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/ird.png" alt="IRD">
+            <img src="file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/diade.png" alt="DIADE">
+        </div>
+    </div>
+</footer>
+</body>
+</html>

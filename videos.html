@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos</title>
+    <style>
+	
+	 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One:wght@400&family=Lato:wght@400&display=swap');;
+
+              body {
+            font-family: 'Fjalla One', sans-serif;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+		
+		.nav-box {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000; /* Adjust background color as needed */
+    z-index: 1000; /* Adjust z-index to make sure it's above other elements */
+}
+
+/* Add padding to the content to avoid being hidden behind the fixed navbar */
+body {
+    padding-top: 60px; /* Adjust the value based on the navbar height */
+}
+
+        /* Black box styling for navigation */
+        .nav-box {
+            background-color: #000;
+            padding: 1em 0; /* Adjust padding as needed */
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+		nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-family: 'Lato', sans-serif; /* Apply Lato font to navigation links */
+        }
+
+        .google-scholar-box {
+            background-color: #ff6666; /* Light red background */
+            color: #fff; /* White font color */
+            padding: 10px; /* Adjust padding as needed */
+            border-radius: 5px; /* Rounded corners */
+            text-align: center;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            padding: 10em 4em;
+            background-size: cover;
+            background-position: center;
+            background-color: #000;
+            background-image: url("file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/videos.JPG");
+            max-width: 1400px;
+            margin: 0 auto;
+            font-family: 'Fjalla One', sans-serif; /* Apply Fjalla One to header */
+        }
+
+        header h1,
+        header p {
+            color: #fff;
+            margin: 2em 0;
+        }
+
+       section {
+            max-width: 1200px;
+            margin: 2em auto; /* Adjust margin as needed */
+            padding: 2em; /* Adjust padding as needed */
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            font-family: 'Lato', sans-serif;
+            text-align: justify; /* Justify text */
+        }
+
+		h1.black-text {
+    color: black;
+		}
+
+        h2 {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify; /* Justify text */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1em auto; /* Adjust margin as needed */
+        }
+		
+		footer {
+            text-align: center;
+            padding: 0.5em;
+            background-color: #3498db;
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            header, section, footer {
+                padding: 1em;
+            }
+
+            img {
+                margin: 1em 0; /* Adjust margin for smaller screens */
+            }
+        }
+		
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+			}
+
+.video-container {
+    width: 50%;
+		}
+
+.video-text {
+    width: 50%;
+}
+		
+		.photo-container {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px; /* Adjust margin as needed */
+				}
+
+		.photo-container img {
+			width: 30%; /* Adjust width as needed */
+			border-radius: 8px; /* Add rounded corners */
+				}
+				
+				.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px; /* Adjust padding as needed */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 60px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 30px; /* Add a small margin to separate logos if needed */
+}
+
+
+.photo-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start (left) */
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Style for the photo */
+.left-photo {
+    max-width: 250px; /* Adjust the maximum width of the photo */
+    width: 100%; /* Make all photos the same width */
+    height: auto;
+    border-radius: 10px; /* Add rounded corners */
+    margin-right: 20px; /* Add margin to separate photo from text */
+}
+
+/* Style for the text */
+.right-text {
+    max-width: calc(100% - 320px); /* Adjust the maximum width of the text */
+    text-align: justify; /* Justify the text */
+}
+
+a {
+            color: blue; /* Set link color */
+            text-decoration: underline; /* Underline link text */
+        }
+
+        /* Style for the container */
+        .researcher-container {
+            margin-bottom: 20px; /* Add margin between researchers */
+        }
+
+        /* Style for the text */
+        .researcher-text {
+            max-width: 800px; /* Adjust the maximum width of the text */
+            text-align: justify; /* Justify the text */
+            text-indent: 50px; /* Add text indentation */
+        }
+		
+    </style>
+	
+	
+</head>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ 
+<body>
+    <!-- Black box for navigation links -->
+<div class="nav-box">
+    <!-- Navigation links -->
+    <nav>
+	    <a href="home.html">HOME</a>
+        <a href="people.html">PEOPLE</a>
+        <a href="global.html">ERC GLOBAL</a>
+        <a href="publications.html">PUBLICATIONS</a>
+        <a href="videos.html">VIDEOS</a>
+        <a href="apc.html">AGPC</a>
+    </nav>
+</div>
+
+    <header>
+        <h1 class="white-text">VIDEOS AND OUTREACH</h1>
+    </header>
+
+    <section>
+	
+	<p>Below is a selection of some of the videos we film when in the field. These are amateur videos, mounted and edited by myself in my spare time. It is a nice way to communicate about our work in the field. For more videos visit <a href="https://www.youtube.com/channel/UCO9_qeJJMoeBw8KWvptcJZQ" target="_blank">my Youtube channel</a>. There are also links to other out reaches I have done on podcasts and online events.</p>
+	
+	<h2>videos from the field</h2>
+	
+<div class="video-section">
+    <div class="video-container">
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/wV-mnv-z2vU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-text">
+        <p>A botanical expedition to the deep Amazon region of the Reserva Faunistica Cuyabeno, Orellana, Ecuador. Once again we visited a little-explored region of Ecuador. We traveled by car and then boat for two days.</p>
+    </div>
+</div>
+
+
+<br>
+
+<div class="video-section">
+    <div class="video-container">
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/coV40a8nx30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-text">
+        <p>A video of our botanical expedition to collect Annonaceae in the #Sápara territory, #Pastaza region of #Ecuador. This region is little explored. We took a small plane to the Balsaura community, where we were hosted by Narcisa and Juan Pio. The expedition was under the guidance of Cesario Santi, from the #Sápara nationality.</p>
+    </div>
+</div>
+
+
+<br>
+
+<div class="video-section">
+    <div class="video-container">
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/X87Pa33eMRg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-text">
+        <p>A short video on Anelio Loor, a real-life conservation hero, protecting one of the last remnants of Choco rainforest in lowland western Ecuador. <a href="https://en.great-leaf.org/" target="_blank">Great Leaf</a> is leading numerous activities to support Anelio, and especially integrate the community of El Sapote in this last chance effort. See more on their website and how you can visit and or help.</p>
+    </div>
+</div>
+
+<br>
+
+<div class="video-section">
+    <div class="video-container">
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/FaxkgyQj67Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-text">
+        <p>Exploration of <a href="https://loscedrosreserve.org/" target="_blank">Los Cedros Reserve</a> in the Andean Choco of Ecuador. We went looking for the rarest and most endangered palm species of Ecuador. This was funded by an IUCN SSC Internal grant and was done within the framework of Najeli Jijon's master project at the PUCE.</p>
+    </div>
+</div>
+
+
+<br>
+
+	<h2>podcasts and other programs</h2>
+
+<div class="photo-text-container">
+    <!-- Photo on the left -->
+    <img class="left-photo" src="images/podcast.JPG" alt="podcast" width="200" height="200">
+
+    <!-- Text on the right -->
+    <div class="right-text">
+        <p><a href="https://www.indefenseofplants.com/podcast/2019/2/10/ep-199-understanding-rainforests-through-evolution" target="_blank">Podcast on "In Defense of Plants"</a></p>
+        <p>Podcast interview (46 min) with Matt from <a href="https://doi.org/10.1111/jbi.14606" target="_blank">In Defense of Plants</a> about tropical rain forest evolution.</p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Thomas L.P. Couvreur @ird </p>
+        
+        <div class="logo-container">
+            <img src="file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/ird.png" alt="IRD">
+            <img src="file:///C:/Users/couvreur/Documents/Sync/work/couvreurlab/images/diade.png" alt="DIADE">
+        </div>
+    </div>
+</footer>
+</body>
+</html>
